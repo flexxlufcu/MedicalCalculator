@@ -76,6 +76,21 @@
             android:textSize="20sp"
             app:cornerRadius="0dp" />
 
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_info3"
+            style="@style/Widget.Material3.Button.OutlinedButton"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@id/btn_rerultMiokard"
+            android:backgroundTint="#C0DAD7"
+            android:fontFamily="serif"
+            android:onClick="info3"
+            android:text="Справка"
+            android:textAlignment="viewStart"
+            android:textColor="#2E7A73"
+            android:textSize="20sp"
+            app:cornerRadius="0dp" />
+
     </RelativeLayout>
 
     <RelativeLayout

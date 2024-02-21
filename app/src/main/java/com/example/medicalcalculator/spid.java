@@ -1,5 +1,6 @@
 package com.example.medicalcalculator;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -44,6 +45,19 @@ public class spid extends AppCompatActivity {
                 }
             }
         });
+    }
+
+    public void info2(View v){
+        showInfo("В фармакокинетике скорость инфузии (или скорость дозирования) относится не только к скорости введения лекарственного средства, но и к желаемой скорости, с которой следует вводить лекарственное средство для достижения устойчивого состояния фиксированной дозы, которая, как было продемонстрировано, является терапевтически эффективной.");
+    }
+
+    private void showInfo(String text){
+        AlertDialog.Builder builder = new AlertDialog.Builder(spid.this);
+        builder.setTitle("Справка")
+                .setMessage(text)
+                .setCancelable(true);
+        AlertDialog dialog = builder.create();
+        dialog.show();
     }
 
     public void next2(View v) {

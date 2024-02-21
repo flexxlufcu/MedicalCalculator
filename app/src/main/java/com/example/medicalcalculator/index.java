@@ -1,5 +1,6 @@
 package com.example.medicalcalculator;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -42,6 +43,19 @@ public class index extends AppCompatActivity {
                 }
             }
         });
+    }
+
+    public void info1(View v){
+        showInfo("Индекс массы тела (ИМТ) – простое отношение веса к росту, часто используется для классификации ожирения и избыточного веса. Индекс рассчитывается как отношение веса тела в килограммах к квадрату роста в метрах (кг/м 2). ИМТ является наиболее удобной мерой оценки уровня ожирения и избыточного веса у населения, поскольку он одинаков для обоих полов и для всех возрастных категорий взрослых.");
+    }
+
+    private void showInfo(String text){
+        AlertDialog.Builder builder = new AlertDialog.Builder(index.this);
+        builder.setTitle("Справка")
+                .setMessage(text)
+                .setCancelable(true);
+        AlertDialog dialog = builder.create();
+        dialog.show();
     }
 
     public void toList1(View v) {

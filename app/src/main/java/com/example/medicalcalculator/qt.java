@@ -1,5 +1,6 @@
 package com.example.medicalcalculator;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -46,6 +47,19 @@ public class qt extends AppCompatActivity {
         });
     }
 
+    public void info4(View v){
+        showInfo("Интервал QT — расстояние от начала комплекса QRS до завершения зубца T. С точки зрения электрофизиологии отражает сумму процессов деполяризации (электрическое возбуждение со сменой заряда клеток) и последующей реполяризации (восстановление электрического заряда) миокарда желудочков. Часто этот параметр называют электрическая систола сердца.");
+    }
+
+    private void showInfo(String text){
+        AlertDialog.Builder builder = new AlertDialog.Builder(qt.this);
+        builder.setTitle("Справка")
+                .setMessage(text)
+                .setCancelable(true);
+        AlertDialog dialog = builder.create();
+        dialog.show();
+    }
+
     public void back4(View v) {
         Intent intent = new Intent(this, miokard.class);
         startActivity(intent);
@@ -57,7 +71,7 @@ public class qt extends AppCompatActivity {
     }
 
     public void toList4(View v) {
-        Intent intent = new Intent(this, index.class);
+        Intent intent = new Intent(this, list_of_calculators.class);
         startActivity(intent);
     }
 

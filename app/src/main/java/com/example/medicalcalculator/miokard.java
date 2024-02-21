@@ -1,5 +1,6 @@
 package com.example.medicalcalculator;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -46,6 +47,20 @@ public class miokard extends AppCompatActivity {
         });
     }
 
+    public void info3(View v){
+        showInfo("Масса миокарда — это вес сердечной мышцы, выраженный в граммах и рассчитанный посредством данных ультразвукового исследования. Эта величина характеризует многие патологические процессы, и ее изменение, обычно в сторону увеличения, может говорить о неблагоприятном прогнозе течения патологии и повышенном риске серьезных осложнений.\n" +
+                "Нормой массы миокарда для мужчин в среднем считаются значения в диапазоне 135 – 182 г, для женщин — 95 – 141 г.");
+    }
+
+    private void showInfo(String text){
+        AlertDialog.Builder builder = new AlertDialog.Builder(miokard.this);
+        builder.setTitle("Справка")
+                .setMessage(text)
+                .setCancelable(true);
+        AlertDialog dialog = builder.create();
+        dialog.show();
+    }
+
     public void back3(View v) {
         Intent intent = new Intent(this, spid.class);
         startActivity(intent);
@@ -57,7 +72,7 @@ public class miokard extends AppCompatActivity {
     }
 
     public void toList3(View v) {
-        Intent intent = new Intent(this, index.class);
+        Intent intent = new Intent(this, list_of_calculators.class);
         startActivity(intent);
     }
 

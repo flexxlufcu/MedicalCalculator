@@ -1,5 +1,6 @@
 package com.example.medicalcalculator;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -42,6 +43,19 @@ public class kaliy extends AppCompatActivity {
                 }
             }
         });
+    }
+
+    public void info6(View v){
+        showInfo("Калий важен для нормального функционирования почек и надпочечников, хотя при патологиях почек и/или почечной недостаточности может быть рекомендовано ограничение его потребления. При дефиците калия нарушается работа нервной и сердечно-сосудистой систем. Этот микроэлемент помогает поддерживать щелочную среду в организме, способствует укреплению костной ткани и сохранению мышечной массы.");
+    }
+
+    private void showInfo(String text){
+        AlertDialog.Builder builder = new AlertDialog.Builder(kaliy.this);
+        builder.setTitle("Справка")
+                .setMessage(text)
+                .setCancelable(true);
+        AlertDialog dialog = builder.create();
+        dialog.show();
     }
 
     public void back6(View v) {

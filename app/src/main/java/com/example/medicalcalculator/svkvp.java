@@ -1,5 +1,6 @@
 package com.example.medicalcalculator;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -44,6 +45,19 @@ public class svkvp extends AppCompatActivity {
         });
     }
 
+    public void info5(View v){
+        showInfo("Внутривенное введение препаратов, также известное как капельное вливание, представляет собой медицинскую процедуру, при которой лекарственные средства или растворы поступают непосредственно в организм пациента через венозное пульсирующее сосудистое русло, или, иными словами, вену. Этот метод администрирования лекарственных препаратов обеспечивает быструю и надежную доставку лекарств внутрь организма, что делает его достаточно эффективным и широко применяемым в современной медицинской практике.");
+    }
+
+    private void showInfo(String text){
+        AlertDialog.Builder builder = new AlertDialog.Builder(svkvp.this);
+        builder.setTitle("Справка")
+                .setMessage(text)
+                .setCancelable(true);
+        AlertDialog dialog = builder.create();
+        dialog.show();
+    }
+
     public void back5(View v) {
         Intent intent = new Intent(this, qt.class);
         startActivity(intent);
@@ -55,7 +69,7 @@ public class svkvp extends AppCompatActivity {
     }
 
     public void toList5(View v) {
-        Intent intent = new Intent(this, index.class);
+        Intent intent = new Intent(this, list_of_calculators.class);
         startActivity(intent);
     }
 
