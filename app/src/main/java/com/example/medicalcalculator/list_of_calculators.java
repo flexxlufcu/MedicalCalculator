@@ -48,4 +48,5 @@ public class list_of_calculators extends AppCompatActivity {
         Intent intent = new Intent(this, kaliy.class);
         startActivity(intent);
     }
+
 }

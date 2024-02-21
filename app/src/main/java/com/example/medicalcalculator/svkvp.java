@@ -11,7 +11,8 @@ import android.widget.TextView;
 
 public class svkvp extends AppCompatActivity {
 
-    double vv, t, result;
+    double vv, t;
+    static double result;
     EditText Text1, Text2;
     TextView Text;
 
@@ -42,6 +43,7 @@ public class svkvp extends AppCompatActivity {
             }
         });
     }
+
     public void back5(View v) {
         Intent intent = new Intent(this, qt.class);
         startActivity(intent);

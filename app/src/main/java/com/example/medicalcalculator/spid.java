@@ -11,7 +11,8 @@ import android.widget.TextView;
 
 public class spid extends AppCompatActivity {
 
-    double m, doza, concentrate, result;
+    double m, doza, concentrate;
+    static double result;
     EditText Text1, Text2, Text3;
     TextView Text;
 

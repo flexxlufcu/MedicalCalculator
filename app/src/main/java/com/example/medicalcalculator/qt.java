@@ -11,7 +11,8 @@ import android.widget.TextView;
 
 public class qt extends AppCompatActivity {
 
-    double qt, rr, kof, result;
+    double qt, rr, kof;
+    static double result;
     EditText Text1, Text2, Text3;
     TextView Text;
 

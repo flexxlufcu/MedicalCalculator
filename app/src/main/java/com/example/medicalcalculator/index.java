@@ -11,7 +11,8 @@ import android.widget.TextView;
 
 public class index extends AppCompatActivity {
 
-    double h, kg, result;
+    double h, kg;
+    static double result;
     EditText Text1, Text2;
     TextView Text;
 

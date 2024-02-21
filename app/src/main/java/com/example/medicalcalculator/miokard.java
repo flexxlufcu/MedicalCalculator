@@ -11,7 +11,8 @@ import android.widget.TextView;
 
 public class miokard extends AppCompatActivity {
 
-    double mgpd, kdr, tzslgd, result;
+    double mgpd, kdr, tzslgd;
+    static double result;
     EditText Text1, Text2, Text3;
     TextView Text;
 

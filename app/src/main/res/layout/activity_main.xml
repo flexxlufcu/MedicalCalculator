@@ -35,13 +35,28 @@
         android:textSize="20sp"
         app:cornerRadius="0dp" />
 
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_on_result"
+        style="@style/Widget.Material3.Button.OutlinedButton"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/btn_on_list"
+        android:backgroundTint="#C0DAD7"
+        android:fontFamily="serif"
+        android:onClick="toResult"
+        android:text="Перейти к списку результатов"
+        android:textAlignment="viewStart"
+        android:textColor="#2E7A73"
+        android:textSize="20sp"
+        app:cornerRadius="0dp" />
+
     <ImageView
         android:id="@+id/imageView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/btn_on_list"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="85dp"
         app:srcCompat="@drawable/exe" />
 
     <com.google.android.material.button.MaterialButton

@@ -11,7 +11,8 @@ import android.widget.TextView;
 
 public class kaliy extends AppCompatActivity {
 
-    double m, kpl, result;
+    double m, kpl;
+    static double result;
     EditText Text1, Text2;
     TextView Text;
 
