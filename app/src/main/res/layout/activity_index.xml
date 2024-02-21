@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FBF1E9"
+    android:orientation="vertical"
+    tools:context=".index">
+
+    <TextView
+        android:id="@+id/tv_IMT"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#325753"
+        android:text="  Индекс массы тела"
+        android:textColor="#C5DADA"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/et_Weight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Введите вес (кг)"
+        android:inputType="numberDecimal"
+        android:textColor="#2E7A73"
+        android:textColorHint="#98B5B2"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/et_Height"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Введите рост (см)"
+        android:inputType="numberDecimal"
+        android:textColor="#2E7A73"
+        android:textColorHint="#98B5B2"
+        android:textSize="20sp" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_resultIndex"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textColor="#2E7A73"
+            android:textSize="20sp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_rerultIndex"
+            style="@style/Widget.Material3.Button.OutlinedButton"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@id/tv_resultIndex"
+            android:backgroundTint="#C0DAD7"
+            android:fontFamily="serif"
+            android:text="Рассчитать результат"
+            android:textAlignment="viewStart"
+            android:textColor="#2E7A73"
+            android:textSize="20sp"
+            app:cornerRadius="0dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_next1"
+            style="@style/Widget.Material3.Button.OutlinedButton"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_above="@id/btn_on_list1"
+            android:layout_alignParentRight="true"
+            android:backgroundTint="#C0DAD7"
+            android:fontFamily="serif"
+            android:onClick="next1"
+            android:text="Далее"
+            android:textAlignment="textEnd"
+            android:textColor="#2E7A73"
+            android:textSize="20sp"
+            app:cornerRadius="0dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_on_list1"
+            style="@style/Widget.Material3.Button.OutlinedButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/btn_on_glstr1"
+            android:backgroundTint="#C0DAD7"
+            android:fontFamily="serif"
+            android:onClick="toList1"
+            android:text="Вернуться к списку калькуляторов"
+            android:textAlignment="viewStart"
+            android:textColor="#2E7A73"
+            android:textSize="20sp"
+            app:cornerRadius="0dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_on_glstr1"
+            style="@style/Widget.Material3.Button.OutlinedButton"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            android:backgroundTint="#C0DAD7"
+            android:fontFamily="serif"
+            android:onClick="toGlstr1"
+            android:text="Вернуться на главную страницу"
+            android:textAlignment="viewStart"
+            android:textColor="#2E7A73"
+            android:textSize="20sp"
+            app:cornerRadius="0dp" />
+
+    </RelativeLayout>
+
+</LinearLayout>

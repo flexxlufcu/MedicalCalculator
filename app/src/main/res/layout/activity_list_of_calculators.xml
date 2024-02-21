@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FBF1E9"
+    android:orientation="vertical"
+    tools:context=".list_of_calculators">
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_on_index"
+        style="@style/Widget.Material3.Button.OutlinedButton"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:backgroundTint="#C0DAD7"
+        android:fontFamily="serif"
+        android:onClick="toIndex"
+        android:text="Индекс массы тела"
+        android:textAlignment="viewStart"
+        android:textColor="#2E7A73"
+        android:textSize="20sp"
+        app:cornerRadius="0dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_on_spid"
+        style="@style/Widget.Material3.Button.OutlinedButton"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:backgroundTint="#C0DAD7"
+        android:fontFamily="serif"
+        android:onClick="toSpid"
+        android:text="Скорость инфузии препарата"
+        android:textAlignment="viewStart"
+        android:textColor="#2E7A73"
+        android:textSize="20sp"
+        app:cornerRadius="0dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_on_miokard"
+        style="@style/Widget.Material3.Button.OutlinedButton"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:backgroundTint="#C0DAD7"
+        android:fontFamily="serif"
+        android:onClick="toMiokard"
+        android:text="Масса миокарда"
+        android:textAlignment="viewStart"
+        android:textColor="#2E7A73"
+        android:textSize="20sp"
+        app:cornerRadius="0dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_on_qt"
+        style="@style/Widget.Material3.Button.OutlinedButton"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:backgroundTint="#C0DAD7"
+        android:fontFamily="serif"
+        android:onClick="toQt"
+        android:text="Корригированный интервал QT"
+        android:textAlignment="viewStart"
+        android:textColor="#2E7A73"
+        android:textSize="20sp"
+        app:cornerRadius="0dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_on_svkvp"
+        style="@style/Widget.Material3.Button.OutlinedButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#C0DAD7"
+        android:fontFamily="serif"
+        android:onClick="toSvkvp"
+        android:text="Скорость внутривенного капельного введения преппарата"
+        android:textAlignment="viewStart"
+        android:textColor="#2E7A73"
+        android:textSize="20sp"
+        app:cornerRadius="0dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_on_kaliy"
+        style="@style/Widget.Material3.Button.OutlinedButton"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:backgroundTint="#C0DAD7"
+        android:fontFamily="serif"
+        android:onClick="toKaliy"
+        android:text="Дефицит калия"
+        android:textAlignment="viewStart"
+        android:textColor="#2E7A73"
+        android:textSize="20sp"
+        app:cornerRadius="0dp" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_on_glstr"
+            style="@style/Widget.Material3.Button.OutlinedButton"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:backgroundTint="#C0DAD7"
+            android:layout_alignParentBottom="true"
+            android:fontFamily="serif"
+            android:onClick="toGlstr"
+            android:text="Вернуться на главную страницу"
+            android:textAlignment="viewStart"
+            android:textColor="#2E7A73"
+            android:textSize="20sp"
+            app:cornerRadius="0dp" />
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FBF1E9"
+    tools:context=".help">
+
+    <TextView
+        android:id="@+id/tv_help"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#325753"
+        android:text="  Поддержка"
+        android:textColor="#C5DADA"
+        android:textSize="20sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="  Если у вас возникли вопросы, пишите \n  на почту: n33at@yandex.ru"
+        android:textColor="#2E7A73"
+        android:textSize="20sp"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_on_glstr7"
+            style="@style/Widget.Material3.Button.OutlinedButton"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            android:backgroundTint="#C0DAD7"
+            android:fontFamily="serif"
+            android:onClick="toGlstr7"
+            android:text="Вернуться на главную страницу"
+            android:textAlignment="viewStart"
+            android:textColor="#2E7A73"
+            android:textSize="20sp"
+            app:cornerRadius="0dp" />
+
+    </RelativeLayout>
+
+</LinearLayout>
